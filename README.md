@@ -2,12 +2,6 @@
 
 <div align="center">
 
-![Portfolio Preview](https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=1200&h=400&fit=crop)
-
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-blue?style=for-the-badge&logo=netlify)](https://malavikmv20.netlify.app)
-[![GitHub](https://img.shields.io/badge/GitHub-View%20Code-black?style=for-the-badge&logo=github)](https://github.com/malavikam20)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/malavikam20)
-
 **A modern, responsive portfolio showcasing my journey as a Software Engineer**
 
 [View Live Demo](https://malavikamv20.netlify.app) • [Report Bug](https://github.com/malavikam20/portfolio/issues) • [Request Feature](https://github.com/malavikam20/portfolio/issues)
