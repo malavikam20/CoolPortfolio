@@ -21,7 +21,7 @@ const Contact = () => {
       icon: <MapPin size={24} />,
       label: 'Location',
       value: 'Kerala, India',
-      href: '#',
+      href: '',
       color: 'from-purple-500 to-pink-500'
     },
     {
