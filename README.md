@@ -59,6 +59,6 @@ This portfolio website represents my professional journey as a Software Engineer
 <div align="center">
 
 
-*Built with ❤️ by Malavika M*
+*Built with ⚡️ by Malavika M*
 
 </div>
