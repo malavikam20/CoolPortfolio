@@ -8,6 +8,7 @@ const Projects = () => {
       description: 'AI-driven platform using the Gemini API to create personalized, high-quality content for YouTube scripts, novels, and blogs, achieving 40% higher efficiency and scaling to 100+ monthly users.',
       duration: 'September 2024 - October 2024',
       url: 'https://newaicontenthere27.netlify.app',
+      github: 'https://github.com/malavikam20/ai-content-generator',
       image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800',
       technologies: ['React', 'Next.js', 'Tailwind CSS', 'PostgreSQL', 'Drizzle Studio', 'Razorpay', 'Gemini API'],
       highlights: [
@@ -28,6 +29,7 @@ const Projects = () => {
       description: 'Responsive, cross-platform travel planning web application using React.js, Tailwind CSS, and JavaScript with real-time destination search and interactive itinerary management.',
       duration: 'May 2024 - June 2024',
       url: 'https://takemethere20.netlify.app/',
+      github: 'https://github.com/malavikam20/ai-travel-planner',
       image: 'https://images.pexels.com/photos/1519088/pexels-photo-1519088.jpeg',
       technologies: ['React.js', 'Tailwind CSS', 'JavaScript', 'Google Places API', 'Google Maps', 'React Hooks'],
       highlights: [
@@ -145,16 +147,16 @@ const Projects = () => {
                   </div>
                 </div>
 
-                {/* Action Button */}
+                {/* GitHub Button */}
                 <div>
                   <a
-                    href={project.url}
+                    href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-teal-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-teal-700 transform hover:scale-105 transition-all duration-300 shadow-lg"
                   >
-                    <ExternalLink size={18} />
-                    View Project
+                    <Github size={18} />
+                    GitHub Repo
                   </a>
                 </div>
               </div>
