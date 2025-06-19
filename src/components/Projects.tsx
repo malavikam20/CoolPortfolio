@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Github, Calendar, Users, TrendingUp } from 'lucide-react';
+import { ExternalLink, Github, Calendar, TrendingUp } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
@@ -71,26 +71,12 @@ const Projects = () => {
             >
               {/* Project Image */}
               <div className="w-full lg:w-1/2">
-                <div className="relative group overflow-hidden rounded-2xl shadow-lg">
+                <div className="relative overflow-hidden rounded-2xl shadow-lg">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-64 md:h-80 object-cover transform group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-64 md:h-80 object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="flex gap-2">
-                      <a
-                        href={project.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="bg-white text-slate-900 px-4 py-2 rounded-lg font-semibold flex items-center gap-2 hover:bg-slate-100 transition-colors duration-300"
-                      >
-                        <ExternalLink size={16} />
-                        Live Demo
-                      </a>
-                    </div>
-                  </div>
                 </div>
               </div>
 
@@ -147,8 +133,8 @@ const Projects = () => {
                   </div>
                 </div>
 
-                {/* GitHub Button */}
-                <div>
+                {/* Action Buttons */}
+                <div className="flex gap-4">
                   <a
                     href={project.github}
                     target="_blank"
@@ -157,6 +143,15 @@ const Projects = () => {
                   >
                     <Github size={18} />
                     GitHub Repo
+                  </a>
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 border border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transform hover:scale-105 transition-all duration-300"
+                  >
+                    <ExternalLink size={18} />
+                    Live Demo
                   </a>
                 </div>
               </div>
