@@ -16,7 +16,7 @@ const Projects = () => {
         '100+ monthly active users',
         '25% reduced backend latency',
         '20% boost in user engagement',
-        '99.9% uptime achieved'
+        '99.9% uptime achieved throughout'
       ],
       stats: {
         users: '100+',
