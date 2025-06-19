@@ -18,17 +18,17 @@ const Contact = () => {
       color: 'from-green-500 to-teal-500'
     },
     {
-      icon: <MapPin size={24} />,
-      label: 'Location',
-      value: 'Kerala, India',
-      color: 'from-purple-500 to-pink-500'
-    },
-    {
       icon: <Linkedin size={24} />,
       label: 'LinkedIn',
       value: '/in/malavikam20',
       href: 'https://www.linkedin.com/in/malavikam20',
       color: 'from-blue-600 to-blue-800'
+    },
+    {
+      icon: <MapPin size={24} />,
+      label: 'Location',
+      value: 'Kerala, India',
+      color: 'from-purple-500 to-pink-500'
     }
   ];
 
