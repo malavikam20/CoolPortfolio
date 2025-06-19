@@ -55,12 +55,12 @@ const Hero = () => {
               <Mail size={20} />
               Get In Touch
             </button>
-            
+
             <a
               href="https://github.com/malavikam20/"
               target="_blank"
               rel="noopener noreferrer"
-              className="border-2 border-slate-300 text-slate-700 px-8 py-4 rounded-lg font-semibold flex items-center gap-2 hover:border-blue-600 hover:text-blue-600 transform hover:scale-105 transition-all duration-300"
+              className="bg-gradient-to-r from-blue-600 to-teal-600 text-white px-8 py-4 rounded-lg font-semibold flex items-center gap-2 hover:from-blue-700 hover:to-teal-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               <ExternalLink size={20} />
               View my Github
@@ -68,12 +68,11 @@ const Hero = () => {
 
             <a
               href="https://drive.google.com/file/d/1bDkexIjaIFZ9xo5sUrp06epfpXCVGhLi/view"
-              className="bg-gradient-to-r from-blue-600 to-teal-600 text-white px-8 py-4 rounded-lg font-semibold flex items-center gap-2 hover:from-blue-700 hover:to-teal-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
               target="_blank"
               rel="noopener noreferrer"
-              className="border-2 border-slate-300 text-slate-700 px-8 py-4 rounded-lg font-semibold flex items-center gap-2 hover:border-blue-600 hover:text-blue-600 transform hover:scale-105 transition-all duration-300"
+              className="bg-gradient-to-r from-blue-600 to-teal-600 text-white px-8 py-4 rounded-lg font-semibold flex items-center gap-2 hover:from-blue-700 hover:to-teal-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
-              <ExternalLink size={20} />
+              <Download size={20} />
               My Resume
             </a>
           </div>
