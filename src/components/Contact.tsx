@@ -21,7 +21,6 @@ const Contact = () => {
       icon: <MapPin size={24} />,
       label: 'Location',
       value: 'Kerala, India',
-      href: '',
       color: 'from-purple-500 to-pink-500'
     },
     {
@@ -64,8 +63,8 @@ const Contact = () => {
                 <a
                   key={index}
                   href={contact.href}
-                  target={contact.href.startsWith('http') ? '_blank' : '_self'}
-                  rel={contact.href.startsWith('http') ? 'noopener noreferrer' : ''}
+                  target={contact.href?.startsWith('http') ? '_blank' : '_self'}
+                  rel={contact.href?.startsWith('http') ? 'noopener noreferrer' : ''}
                   className="block group"
                 >
                   <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-200 hover:shadow-xl transform hover:scale-105 transition-all duration-300">
@@ -79,7 +78,7 @@ const Contact = () => {
                           {contact.value}
                         </p>
                       </div>
-                      {contact.href.startsWith('http') && (
+                      {contact.href?.startsWith('http') && (
                         <ExternalLink size={16} className="text-slate-400 ml-auto" />
                       )}
                     </div>
@@ -117,7 +116,11 @@ const Contact = () => {
           {/* Contact Form */}
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-slate-200">
             <h3 className="text-2xl font-bold text-slate-900 mb-6">Send a Message</h3>
-            <form className="space-y-6">
+            <form
+              action="https://formspree.io/f/mblykeeo"
+              method="POST"
+              className="space-y-6"
+            >
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label htmlFor="firstName" className="block text-sm font-medium text-slate-700 mb-2">
@@ -126,6 +129,8 @@ const Contact = () => {
                   <input
                     type="text"
                     id="firstName"
+                    name="firstName"
+                    required
                     className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
                     placeholder="John"
                   />
@@ -137,12 +142,14 @@ const Contact = () => {
                   <input
                     type="text"
                     id="lastName"
+                    name="lastName"
+                    required
                     className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
                     placeholder="Doe"
                   />
                 </div>
               </div>
-              
+
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-2">
                   Email
@@ -150,11 +157,13 @@ const Contact = () => {
                 <input
                   type="email"
                   id="email"
+                  name="email"
+                  required
                   className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
                   placeholder="john@example.com"
                 />
               </div>
-              
+
               <div>
                 <label htmlFor="subject" className="block text-sm font-medium text-slate-700 mb-2">
                   Subject
@@ -162,23 +171,30 @@ const Contact = () => {
                 <input
                   type="text"
                   id="subject"
+                  name="subject"
+                  required
                   className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
                   placeholder="Project Collaboration"
                 />
               </div>
-              
+
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-2">
                   Message
                 </label>
                 <textarea
                   id="message"
+                  name="message"
                   rows={5}
+                  required
                   className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 resize-none"
                   placeholder="Tell me about your project or opportunity..."
                 ></textarea>
               </div>
-              
+
+              {/* Optional: Redirect to thank-you page after submission */}
+              <input type="hidden" name="_redirect" value="https://yourdomain.com/thank-you" />
+
               <button
                 type="submit"
                 className="w-full bg-gradient-to-r from-blue-600 to-teal-600 text-white px-6 py-3 rounded-lg font-semibold flex items-center justify-center gap-2 hover:from-blue-700 hover:to-teal-700 transform hover:scale-105 transition-all duration-300 shadow-lg"
